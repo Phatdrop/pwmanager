@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager - Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="profile">
+        <h2>Your Stored Passwords</h2>
+        <div id="password-list">
+            <ul id="passwords"></ul>
+        </div>
+        <div id="password-creation-form">
+            <h2>Create Password</h2>
+            <input type="text" id="site" placeholder="Site">
+            <input type="password" id="new-password" placeholder="Password">
+            <button onclick="createPassword()">Create Password</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

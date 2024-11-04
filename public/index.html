@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Login Form -->
+    <div id="login-form">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Password Creation Form -->
+    <div id="password-creation-form" style="display: none;">
+      <h2>Create Password</h2>
+      <input type="text" id="site" placeholder="Site">
+      <input type="password" id="new-password" placeholder="Password">
+      <button onclick="createPassword()">Create Password</button>
+    </div>
+
+  <!-- Registration form for creating an account -->
+<div id="registration-form">
+  <h2>Register</h2>
+  <input type="text" id="register-username" placeholder="Username">
+  <input type="password" id="register-password" placeholder="Password">
+  <button onclick="register()">Register</button>
+
+  <!-- QR code for 2FA setup will appear here -->
+  <div id="qr-code-container" style="display: none;">
+    <h3>Scan this QR code with your 2FA app</h3>
+    <img id="qr-code" alt="QR Code for 2FA">
+    <p>If you can't scan the QR code, use this secret:</p>
+    <p id="secret-code"></p>
+  </div>
+</div>
+
+</div>
+
+    <!-- Password List -->
+    <div id="password-list" style="display: none;">
+      <h2>Saved Passwords</h2>
+      <ul id="passwords"></ul>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
