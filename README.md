@@ -26,8 +26,8 @@ Node.js installed on your system
 Installation
 Clone the repository:
 
-git clone https://github.com/your-username/password-manager.git
-cd password-manager
+git clone https://github.com/Phatdrop/pwmanager
+cd pwmanager
 Install dependencies:
 
 npm install
